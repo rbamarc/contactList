@@ -31,11 +31,14 @@ export default function SelectedContact({ selectedContactId, setSelectedContactI
 
   return (
     <div>
-      <h2>Selected Contact Details</h2>
-      <p>Name: {contact.name}</p>
-      <p>Email: {contact.email}</p>
-      <p>Phone: {contact.phone}</p>
-      {/* Display other contact details as needed */}
+        <h2>Selected Contact Details</h2>
+        <p>Name: {contact.name}</p>
+        <p>Username: {contact.username }</p>
+        <p>Email: {contact.email}</p>
+        <p>Phone: {contact.phone}</p>
+        <p>Website: {contact.website}</p>
+         
+      
       <button onClick={handleGoBack}>Go Back to Contact List</button>
     </div>
   );
